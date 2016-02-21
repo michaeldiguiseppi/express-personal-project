@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>About {{ title }}</h1>
+    <ul>
+        {% for like in about %}
+        <li>{{ title }} {{ like }}</li>
+        {% endfor %}
+    </ul>
+
+  </div>
+
+{% endblock %}
